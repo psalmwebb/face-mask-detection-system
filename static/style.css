@@ -1,0 +1,156 @@
+       body{
+         margin:0;
+         background:rgb(0,36,54);
+       }
+
+
+       .app{
+        padding:20px;
+        position:absolute;
+        width:35%;
+        top:2%;
+        border-radius:4px;
+        left:30%;
+        transition:left 0.4s;
+       }
+
+       .app input{
+          padding:10px 10px;
+          margin:0 auto;
+          display:block;
+          width:80%;
+          margin-bottom:20px;
+          border-radius:2px;
+       }
+
+       .app img{
+        margin:0 auto;
+        display:block;
+        width:100%;
+        height:400px;
+       }
+
+       #c-images{
+        position:absolute;
+        position: relative;
+        width:40%;
+        left:50%;
+        top:5%;
+        border-radius:4px;
+        height:500px;
+        padding:3px;
+        align-items:center;
+        justify-content: center;
+        flex-wrap:wrap;
+        display:none;
+       }
+
+       #c-images .loaderDiv{
+         position:absolute;
+         background-color:transparent;
+         left:0;
+         display:flex;
+         width:100%;
+         height:100%;
+         z-index:100;
+         justify-content:center;
+         align-items:center;
+       }
+
+        #c-images .loaderDiv .loader{
+           width:100px;
+           height:100px;
+           border:5px solid yellow;
+           border-radius:100%;
+           border-top-color:transparent;
+           border-bottom-color:transparent;
+           animation:rotate 0.4s infinite linear;
+        }
+
+        @keyframes rotate{
+          from{
+            transform:rotate(0deg);
+          }
+          to{
+            transform:rotate(360deg);
+          }
+        }
+
+       #c-images #cropped-img-div{
+         margin:2px;
+         animation:scaleup 0.5s;
+         text-align:center;
+         background:orange;
+         font-size:25px;
+         font-weight:bold;
+       }
+
+       #c-images div img{
+         border-radius:5px;
+         display:block;
+         margin-bottom:2px;
+       }
+
+       @keyframes scaleup{
+        from{
+            transform:scale(0);
+        }
+        to{
+            transform:scale(1)
+        }
+       }
+
+       @keyframes scaledown{
+        from{
+            transform:scale(1);
+        }
+        to{
+            transform:scale(0)
+        }
+       }
+
+
+       button#reset{
+         padding:20px;
+         background:darkred;
+         font-weight:bold;
+         border:2px solid darkred;
+         box-shadow:0 0 30px 2px darkred;
+         color:white;
+         border-radius:5px;
+         position:absolute;
+         top:85%;
+         left:85%;
+         outline:none;
+         /*display: none;*/
+         animation:scaleup 0.4s;
+       }
+
+       button#reset:active{
+        color:black;
+        background:orange;
+       }
+
+      #button{
+        padding:20px;
+        background:orange;
+        border:2px solid orange;
+        margin-top:10px;
+        box-shadow:0 0 30px 2px yellow;
+        border-radius:5px;
+        outline:none;
+      }
+
+   #button:active{
+        background-color:yellow;
+        box-shadow:0 0 30px 2px brown;
+   }
+
+
+ span{
+   color:lightgrey;
+   position:fixed;
+   bottom:20px;
+   left:20px;
+   font-family:cursive;
+ }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FACE MASK RECOGNITION (A.I)</title>
+    <link rel="icon" href="{{url_for('static',filename = 'favicon.jpg')}}" sizes="16x16" type="image/png">
+    <link href="{{url_for('static',filename = 'style.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+    <div class="app">
+        <input type="text" placeholder="Paste Image Link Here">
+        <img src="">
+
+        <button id="button">PREDICT</button>
+    </div>
+
+    <div id="c-images">
+      <div class="loaderDiv">
+          <div class="loader">
+
+          </div>
+      </div>
+    </div>
+
+    <button id="reset">RESET</button>
+    <span>FACE MASK DETECTION SYSTEM BY PSALMY WEB (STAY SAFE)</span>
+
+<script src="{{url_for('static',filename='main.js')}}"></script>
+</body>
+
+
+</html>
